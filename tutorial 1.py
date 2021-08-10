@@ -14,7 +14,6 @@ if __name__ == "__main__":
     
     
  --html
-
 <!doctype html>
 <html>
     <head>
@@ -22,10 +21,11 @@ if __name__ == "__main__":
         </head>
         <body>
             <h1>Home Page!</h1>
-          {% for x in range(10) %}
-          {% if x % 2 == 1 %}
-            <p>{{x}}</p>
-            {% endif %}
+          {% for x in content %}
+          <p>{{x}}</p>
+        
             {% endfor %}
         </body>
     </html>
+
+
